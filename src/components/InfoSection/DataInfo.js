@@ -1,0 +1,28 @@
+export const homeObjOne = {
+    id:'about',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'About',
+    headline: 'Thinker.. Innovator.. Developer ',
+    description: 'Currently pursuing B.Tech in Computer Science. Problem solver who loves to formulate ideas for software designing and machine learning models. Enjoys learning while gaining experience.',
+    imgStart: false,
+    imgme: require('../../images/about.jpg'),
+    alt: 'profile',
+    dark: true,
+    primary: true,
+    darkText: false
+};
+    /*id:'projects',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Projects',
+    headline: 'Projects ',
+    description: 'Currently pursuing B.Tech in Computer Science. Problem solver who loves to formulate ideas for software designing and machine learning models. Enjoys learning while gaining experience.',
+    imgStart: false,
+    img: require('../../images/about.jpg'),
+    alt: 'projects',
+    dark: true,
+    primary: true,
+    darkText: false*/

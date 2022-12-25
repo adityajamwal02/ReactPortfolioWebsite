@@ -1,0 +1,48 @@
+.tool-menu
+{   display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.tool-handle-list {
+    list-style: none;
+    display: flex;
+  }
+  
+.tool-handle-item { 
+    list-style: none; 
+    margin: 10px;
+}
+
+.phototool {
+    height: 55px;
+    width: 55px;
+
+}
+
+@media only screen and (max-width: 600px)
+{
+
+  .tool-handle-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+  @media only screen and (max-width: 1250px)
+{
+
+  .tool-handle-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+}

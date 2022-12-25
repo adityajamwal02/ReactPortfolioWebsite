@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Home from './pages';
+import WebDev from './pages/webdev';
+import MachineLearning from './pages/machinelearning';
+import Cpp from './pages/cpp';
+import Python from './pages/python'
+import DeepLearning from './pages/deeplearning';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/webdev" element={<WebDev/>} />
+        <Route path="/machinelearning" element={<MachineLearning/>}/>
+        <Route path="/cpp" element={<Cpp/>}/>
+        <Route path="/python" element={<Python/>}/>
+        <Route path="/deeplearning" element={<DeepLearning/>}/>
+      </Routes>
+    </Router>
   );
 }
 

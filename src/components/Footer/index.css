@@ -1,0 +1,32 @@
+.social-menu
+{   display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-handle-list {
+    list-style: none;
+    display: flex;
+  }
+  
+.social-handle-item {  
+    margin: 10px;
+    cursor: pointer;
+}
+.social-handle-item:hover {
+  background-color: #3AE4B8;
+  border-radius: 50%;
+  transform: translateX(0px) translateY(-3px);
+  transform: ease;
+  transition: 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px)
+{
+
+  .social-handle-list{
+    display: grid;
+    place-items: center;
+  }
+}
+
